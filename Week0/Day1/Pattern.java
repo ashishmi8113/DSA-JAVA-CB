@@ -71,7 +71,7 @@ public class Pattern {
                 if(i==j){
                     System.out.print("*");
                 }
-                else if(i+j==n+1){
+                if(i+j==n+1){
                     System.out.print("*");
                 }
                 else{
