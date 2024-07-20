@@ -1,3 +1,5 @@
+package Week1.Day0;
+
 public class Week1_Day0_HW {
     public static void printArr(int[] arr){
         for (int i = 0; i <arr.length; i++) {
