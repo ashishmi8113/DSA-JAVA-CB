@@ -1,6 +1,6 @@
 package Week1.Day0;
 
-public class Day0HW {
+public class Week1_Day0_HW {
     public static void printArr(int[] arr){
         for (int i = 0; i <arr.length; i++) {
             System.out.print(arr[i]+" ");
