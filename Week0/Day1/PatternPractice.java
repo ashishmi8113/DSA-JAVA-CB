@@ -702,7 +702,7 @@ public class PatternPractice {
                 System.out.println();
             }
         }
-         
+        
         public static void main(String[] args){
             pattern33(10);
         }
