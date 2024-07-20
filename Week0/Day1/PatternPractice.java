@@ -675,8 +675,7 @@ public class PatternPractice {
             System.out.println();
         }
     }
-    public static void pattern33(int n){
-        
+    public static void pattern33(int n){        
         for (int i = 1; i <=n; i++) {
             for (int j = 1; j <=n-1; j++) {
                 if(i!=1){
@@ -704,7 +703,33 @@ public class PatternPractice {
     }
     
     public static void main(String[] args){
-        pattern11(4);
-        
+        // pattern33(8);
+        int n=5;
+        // for (int i = 1; i <=n; i++) {
+        //     for (int k = 2; k <=n; k++) {
+        //         if(i+k<=n){
+        //             System.out.print("  ");
+        //         }
+        //         else{
+        //             System.out.print("* ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+        int a=1;
+        for (int i = 1; i <=n; i++) {
+            for (int k = 1; k <=n-i; k++) {
+                System.out.print("-\t");
+            }
+            for (int j = 1; j <=i; j++) {
+                System.out.print(a+"\t");
+                a++;
+            }
+            for (int j = 1; j <=i-1; j++) {
+                System.out.print(a+"\t");
+                a++;
+            }
+            System.out.println();
+        }
     }
 }
