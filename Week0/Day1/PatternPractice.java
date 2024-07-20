@@ -24,6 +24,7 @@ public class PatternPractice {
             System.out.println();
         }
     }
+    }
     public static void pattern4(int n){
         for (int i = 1; i <=n; i++) {
             for (int k = 1; k <=n-i; k++) {
