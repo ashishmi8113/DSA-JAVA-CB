@@ -705,5 +705,4 @@ public class PatternPractice {
             public static void main(String args[]) {
                 pattern11(5);
             }
-            
         }
