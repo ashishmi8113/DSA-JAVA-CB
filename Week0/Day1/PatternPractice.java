@@ -702,7 +702,8 @@ public class PatternPractice {
                 System.out.println();
             }
         }
-            public static void main(String args[]) {
-                pattern11(5);
-            }
-        }
+
+    public static void main(String args[]) {
+        pattern11(5);
+    }
+}
