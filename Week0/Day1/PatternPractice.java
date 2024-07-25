@@ -703,51 +703,6 @@ public class PatternPractice {
             }
         }
             public static void main(String args[]) {
-                // int n = 4;
-        
-                // //upper half
-                // for (int i=1; i<=n; i++){
-        
-                //     for (int j=1; j<=i; j++){
-                //         System.out.print("*");
-                //     }
-        
-                //     //spaces
-                //     for (int j=1; j<=n-i; j++){
-                //         System.out.print(" ");
-                //     }
-                //     for (int j=1; j<=n-i; j++){ // you did not mention this loop
-                //         System.out.print(" ");
-                //     }
-        
-                //     //2nd part
-                //     for (int j=1; j<=i; j++){ // not j<=n, it should be j<=i
-                //         System.out.print("*");
-                //     }
-                //     System.out.println();
-                // }
-                
-                //   //lower half
-                //   for (int i=n; i>=1; i--){ // not i>=n, it should be i>=1
-        
-                //     for (int j=1; j<=i; j++){
-                //         System.out.print("*");
-                //     }
-        
-                //     //spaces
-                //     for (int j=1; j<=n-i; j++){
-                //         System.out.print(" "); 
-                //     }
-                //     for (int j=1; j<=n-i; j++){ // you did not mention this loop
-                //         System.out.print(" ");
-                //     }
-        
-                //     //2nd part
-                //     for (int j=1; j<=i; j++){
-                //         System.out.print("*"); // not j<=n, it should be j<=i
-                //     }
-                //         System.out.println();
-                // }
                 pattern11(5);
             }
             
