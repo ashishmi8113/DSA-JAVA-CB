@@ -175,7 +175,183 @@ public class AssignMent_1Sol {
         return largest;
     }
 
- 
+
+
+
+
+
+
+
+
+    public static long countDigit(long n){
+        int count=0;
+        while(n!=0){
+            n=n/10;
+            count++;
+        }
+        return count;
+    }
+    public static long invertNum(long n){
+        if (n == 0) {
+            return 0;
+        }
+        long temp=n;
+        long temp1=n;
+        long prevNum=0;
+        long factor=1;
+        long lastNum=0;
+        while(n!=0){
+            lastNum =n%10;
+            long update=9-lastNum;
+            if(update<lastNum){
+                lastNum=update;
+            }
+            prevNum+=lastNum*factor;
+            factor=factor*10;
+            n=n/10;
+        } 
+        long count=countDigit(temp);
+        if(lastNum==0){
+            long addi=9;
+            for(int i=0;i<count-1;i++){
+                addi=addi*10;
+            }
+            prevNum=addi+prevNum;
+        }
+        if(prevNum<temp1){
+            return prevNum;
+        }
+        else {
+            return temp1;
+        }    
+    }
+
+
+
+
+    public static long replaceZeroesWithFives(long n) {
+        if (n == 0) {
+            return 5;
+        }
+
+        long result = 0;
+        long multiplier = 1;
+
+        while (n > 0) {
+            long digit = n % 10;
+            if (digit == 0) {
+                digit = 5;
+            }
+            result = digit * multiplier + result;
+            multiplier *= 10;
+            n /= 10;
+        }
+
+        return result;
+    }
+
+
+
+    public static void seriesPrint(int a, int b){
+        int k=0;
+        for (int i = 1; i <=a+k; i++) {
+            int ans=3*i+2;
+            if(ans%b!=0){
+                System.out.println(ans);
+            }
+            else{
+                k++;
+            }
+        }
+    }
+
+
+
+    public static void arm(int a, int b){
+        for(int i=a;i<=b;i++){
+
+            int temp1=i;
+            int n=i;
+            int count=0;
+            while(temp1!=0){
+                temp1=temp1/10;
+                count++;
+            }
+            int sum=0;
+            while(n!=0){
+                int lastnum=n%10;
+                int multi=1;
+                for(int j=0;j<count;j++){
+                    multi=multi*lastnum;
+                }
+                sum+=multi;
+                n=n/10;
+            }
+            if(sum==i){
+                System.out.println(sum);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static int decimalToAnyBase(int sb, int db, int n){
+        int n1=n;
+        int prevSum=0;
+        if(sb==10){
+            int factor=1;
+            // int prevDb=0;
+            // int count=0;
+            while(n1!=0){
+                int remainder=n1%db;
+                prevSum=prevSum+remainder*factor;
+                factor=factor*10;
+                // prevDb=n1;
+                n1=n1/db;
+                // count++;
+            }
+        }
+        return prevSum;
+
+    }
+    
+    public static int anyBaseToDecimal(int sb, int db , int n){
+        // int n1=n;
+        int deciSum=0;
+        // int power=sb;
+        int i=0;
+        if(db==10){
+            while(n!=0){
+                int lastNum=n%10;
+                deciSum+=lastNum*Math.pow(sb,i);
+                i++;
+                n/=10;
+            }
+        }
+        return deciSum;
+    }
+    public static void anybaseToAnyBase(int sb, int db, int n){
+        int anyToDeci=anyBaseToDecimal(sb,10,n);
+        int deciToAny=decimalToAnyBase(10,db,anyToDeci);
+        System.out.println(deciToAny);
+    }
     
 
 
@@ -196,14 +372,158 @@ public class AssignMent_1Sol {
 
 
 
+    public static int primeFactSum(int n){
+        int pSum=0;
+        for(int i=2;i<=n;i++){
+            if(n%i==0){
+                int factorSum=sumNum(i);
+                pSum+=factorSum;
+                n=n/i;
+                i--;
+            }
+        }
+        return pSum;
+    }
+    public static int sumNum(int n){
+      int sum=0;
+        while(n!=0){
+            int lastDigit=n%10;
+            sum+=lastDigit;
+            n=n/10;
+        }
+        return sum;
+    }
+
+
+
+
+
+    public static void purchase(int m, int n){
+        int ayushPurchase=0;
+        int harshitPurchase=1;
+        if(m==0){
+            System.out.println("Harshit");
+        }
+        if(n==0){
+            System.out.println("Aayush");
+        }
+        int a=0;
+        int h=0;
+        while(ayushPurchase<=m){
+            ayushPurchase=2*a+1;
+            a++;
+        }
+        while(harshitPurchase<=n){
+            harshitPurchase=2*h;
+            h++;
+        }
+        if(ayushPurchase>harshitPurchase){
+            System.out.println("Aayush");
+        }
+        else{
+            System.out.println("Harshit");
+        }
+    }
+
+
+
+
+
+
+
+
+
+    public static void oddEvenScheme(int num){
+        // for(int i=0;i<n;i++){
+            // int num2=num;
+            int evenNum=0;
+            int oddNum=0;
+            while(num!=0){
+                int lastNum=num%10;
+                if(lastNum%2==0){
+                    evenNum+=lastNum;
+                }
+                else{
+                    oddNum+=lastNum;
+                }
+                num=num/10;
+            }
+            if(evenNum%4==0 || oddNum%3==0){
+                System.out.println("Yes");
+            }
+            else{
+                System.out.println("No");
+            }
+        // }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public static boolean isArmStrong(int n){
+        int count=0;
+        int temp1=n;
+        int temp2=n;
+        while(temp1!=0){
+            temp1=temp1/10;
+            count++;
+        }
+        int sum=0;
+        while(n!=0){
+            int lastNum= n%10;
+            int multiply=1;
+            for(int i=0;i<count;i++){
+                multiply=multiply*lastNum;
+            }
+            sum+=multiply;
+            n=n/10;
+        }
+        if(sum==temp2){
+            return true;
+        }
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter :=");
-        int n=sc.nextInt();
-        sumEvenOddPlaces(n);
+        Scanner sc=new Scanner(System.in);
+        // // SIMPLE INPUT QUESTION
+        // int prevSum=0;
+        // while(sc.hasNextInt()){
+        //     int n=sc.nextInt();
+        //     prevSum+=n;
+        //     if(prevSum<0)
+        //         break;
+        //     else{
+        //         System.out.println(n);
+        //     }
+        // }
+
+
+        anybaseToAnyBase(10, 2, 8);
         sc.close();
     }
 }
