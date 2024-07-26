@@ -1,6 +1,6 @@
-package Week0.AssignMent_0Sol;
+package Week0.AssignMent_0;
 
-public class AssignMent_0Sol {
+public class AssignMent_0 {
     public static void pattern1(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
