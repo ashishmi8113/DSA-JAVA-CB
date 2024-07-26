@@ -709,6 +709,7 @@ public class PatternPractice {
                     System.out.print(0 + " ");
                 }
             }
+        }
     }
      public static void main(String args[]) {
            pattern11(5);
