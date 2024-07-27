@@ -1,3 +1,4 @@
+package Week1.Day1;
 public class ArrayClassW {
     public static void printArr(int[] arr){
         for (int i = 0; i <arr.length; i++) {
