@@ -56,13 +56,6 @@ public class BinarySearch {
         }
         return upperBound;
     }
-    public static int bsCountOccurence(int[] arr, int l, int h){
-        int count=0;
-        for (int i = l; i <h; i++) {
-            count++;
-        }
-        return count;
-    }
     public static int CountOccurence(int[] arr, int num){
         int lower=bsLowerBound(arr, num);
         int upper=bsUpperBound(arr, num);
