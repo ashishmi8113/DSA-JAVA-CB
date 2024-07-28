@@ -1,4 +1,4 @@
-package Week2.Assignment_2Sol;
+package Week2;
 
 public class AssignMent_2Sol {
     public static void main(String[] args) {

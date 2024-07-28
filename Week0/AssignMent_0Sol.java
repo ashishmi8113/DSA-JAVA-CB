@@ -1,4 +1,4 @@
-package Week0.AssignMent_0;
+package Week0;
 
 public class AssignMent_0Sol {
     public static void pattern1(int n) {

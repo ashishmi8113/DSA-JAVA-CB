@@ -1,4 +1,4 @@
-package Week1.Assignment_1Sol;
+package Week1;
 
 import java.util.*;
 public class AssignMent_1Sol {
