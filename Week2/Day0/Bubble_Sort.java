@@ -1,6 +1,6 @@
 package Week2.Day0;
 
-public class BubbleSort {
+public class Bubble_Sort {
     public static void bubbleSort(int[] arr){
         for (int turn = 1; turn < arr.length; turn++) {
             int flag=0;
