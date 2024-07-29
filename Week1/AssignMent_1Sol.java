@@ -182,21 +182,21 @@ public class AssignMent_1Sol {
 
 
 
-
     public static long countDigit(long n){
-        int count=0;
-        while(n!=0){
-            n=n/10;
-            count++;
-        }
-        return count;
+            int count=0;
+            while(n!=0){
+                n=n/10;
+                count++;
+            }
+            return count;
     }
+    
     public static long invertNum(long n){
         if (n == 0) {
             return 0;
         }
+        long count=countDigit(n);
         long temp=n;
-        long temp1=n;
         long prevNum=0;
         long factor=1;
         long lastNum=0;
@@ -210,23 +210,21 @@ public class AssignMent_1Sol {
             factor=factor*10;
             n=n/10;
         } 
-        long count=countDigit(temp);
         if(lastNum==0){
-            long addi=9;
+            long factor2=9;
             for(int i=0;i<count-1;i++){
-                addi=addi*10;
+                factor2=factor2*10;
             }
-            prevNum=addi+prevNum;
+            prevNum=factor2+prevNum;
         }
-        if(prevNum<temp1){
+        if(prevNum<temp){
             return prevNum;
         }
         else {
-            return temp1;
-        }    
+            return temp;
+        }
+            
     }
-
-
 
 
     public static long replaceZeroesWithFives(long n) {
@@ -523,7 +521,8 @@ public class AssignMent_1Sol {
         // }
 
 
-        anybaseToAnyBase(10, 2, 8);
+        // anybaseToAnyBase(10, 2, 8);
+        System.out.println(invertNum(9999));
         sc.close();
     }
 }
