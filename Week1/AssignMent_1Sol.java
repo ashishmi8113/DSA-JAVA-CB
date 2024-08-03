@@ -350,6 +350,12 @@ public class AssignMent_1Sol {
         int deciToAny=decimalToAnyBase(10,db,anyToDeci);
         System.out.println(deciToAny);
     }
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        anybaseToAnyBase(10, 2, 8);
+        System.out.println(invertNum(9999));
+        sc.close();
+    }
     
 
 
@@ -506,23 +512,23 @@ public class AssignMent_1Sol {
 
 
 
-    public static void main(String args[]) {
-        Scanner sc=new Scanner(System.in);
-        // // SIMPLE INPUT QUESTION
-        // int prevSum=0;
-        // while(sc.hasNextInt()){
-        //     int n=sc.nextInt();
-        //     prevSum+=n;
-        //     if(prevSum<0)
-        //         break;
-        //     else{
-        //         System.out.println(n);
-        //     }
-        // }
+    // public static void main(String args[]) {
+    //     Scanner sc=new Scanner(System.in);
+    //     // // SIMPLE INPUT QUESTION
+    //     // int prevSum=0;
+    //     // while(sc.hasNextInt()){
+    //     //     int n=sc.nextInt();
+    //     //     prevSum+=n;
+    //     //     if(prevSum<0)
+    //     //         break;
+    //     //     else{
+    //     //         System.out.println(n);
+    //     //     }
+    //     // }
 
 
-        // anybaseToAnyBase(10, 2, 8);
-        System.out.println(invertNum(9999));
-        sc.close();
-    }
+    //     anybaseToAnyBase(10, 2, 8);
+    //     System.out.println(invertNum(9999));
+    //     sc.close();
+    // }
 }
