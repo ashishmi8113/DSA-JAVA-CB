@@ -362,7 +362,7 @@ public class AssignMent_2Sol {
     }
 
     public static void main(String[] args) {
-	// Q9
+	// Q 9
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int[] arr=new int[N];

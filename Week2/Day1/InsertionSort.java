@@ -26,6 +26,7 @@ public class InsertionSort {
 		for(int i=0;i<n;i++){
 			arr[i]=sc.nextInt();
 		}
+        sc.close();
         insertionSort(arr);
         display(arr);
 
