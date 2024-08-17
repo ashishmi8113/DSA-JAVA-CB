@@ -93,7 +93,7 @@ public class AssignMent_2Sol {
 	public static void interSectionArr(int[] arr1,int[] arr2){
 		// Arrays.sort(arr1);
         // Arrays.sort(arr2);
-		int count=0;
+		// int count=0;
 		for(int i=0;i<arr2.length;i++){
             for(int j=0;j<arr1.length;j++){
 			    if(arr2[i]==arr1[j]){
@@ -260,7 +260,7 @@ public class AssignMent_2Sol {
 
 	public static int numSubArrays(int[] arr,int k){
 		int totalNumber=0;
-		int addi=0;
+		// int addi=0;
 		for(int i=0;i<arr.length;i++){
 		int prevSum=1;
             for(int j=i;j<arr.length;j++){
