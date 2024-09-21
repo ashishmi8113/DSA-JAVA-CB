@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Array_List {
-    public ArrayList list(int[] arr){
+    public ArrayList<Integer> list(int[] arr){
         ArrayList<Integer> al=new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             al.add(arr[i]);
