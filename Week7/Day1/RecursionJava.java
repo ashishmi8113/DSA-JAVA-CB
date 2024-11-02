@@ -8,6 +8,8 @@ public class RecursionJava {
         int x= n*facto(n-1);
         return x;
     }
+
+
     public static int power(int a,int b){
         if(b==0){
             return 1;
@@ -15,12 +17,18 @@ public class RecursionJava {
         int x=a*power(a, b-1);
         return x;
     }
+
+
+
     public static int factoTail(int n,int x){
         if(n==1 ||n==0){
             return x;
         }
         return factoTail(n-1, n*x);
     }
+
+
+    
     public static void main(String[] args) {
         // int ans=facto(5);    
         // System.out.println(ans);

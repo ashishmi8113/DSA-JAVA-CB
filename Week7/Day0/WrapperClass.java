@@ -1,3 +1,4 @@
+// import java.util.*;
 
 public class WrapperClass {
     public static void main(String[] args) {
@@ -9,9 +10,9 @@ public class WrapperClass {
         Integer d=c; //AUTOBOXING
         System.out.println(d);
 
-        int[] arr={4,3,2,1};
-        Array_List al=new Array_List();
-        al.list(arr);
+        // int[] arr={4,3,2,1};
+        // List<Integer> list=new ArrayList<>();
+        
         
 
     }

@@ -22,6 +22,9 @@ public class fibonacciClass {
         subSequence(p1, p2+p3);
         subSequence(p1, p2);
     }
+
+
+
     public static void coinToss(int n, String ans){
         if(n==0){
             System.out.print(ans+" ");
@@ -30,6 +33,9 @@ public class fibonacciClass {
         coinToss(n-1, ans+"H");
         coinToss(n-1, ans+"T");
     }
+
+
+
     public static int countSub(String n){
         if(n.length()==0){
             return 1;
@@ -38,6 +44,8 @@ public class fibonacciClass {
         int r=countSub(n.substring(1));
         return l+r;
     }
+
+    
     public static void main(String[] args) {
         // subSequence("Car", "");
         // System.out.println();
