@@ -53,9 +53,10 @@ public class BinaryTreeClass {
         if(nn.right!=null){
             output=output+nn.right.val;
         }
-        else if(nn.left==null){
+        else if(nn.right==null){
             output=output+"null";
         }
+        // System.out.println(output);
         displayTree(nn.left);
         displayTree(nn.right);
     }

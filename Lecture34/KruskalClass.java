@@ -104,6 +104,7 @@ public class KruskalClass {
 
 
 }
+
 /*
 4 5 
 1 2 3
