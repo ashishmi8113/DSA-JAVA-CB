@@ -8,7 +8,7 @@ public class TopologicalSort {
     // Ques: 207
         public boolean canFinish(int numCourses, int[][] prerequisites) {
             //Creating Sorted List, indegree array & adjacency list
-            List<Integer> []adjList= new List[numCourses];
+            List<Integer>[] adjList= new List[numCourses];
             int[] indegree= new int[numCourses];
             List<Integer> ans= new ArrayList<>();
     

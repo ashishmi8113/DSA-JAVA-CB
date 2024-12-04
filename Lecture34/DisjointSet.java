@@ -31,7 +31,7 @@ public class DisjointSet {
 			return nn;
 		}
 		Node n = findRootNode(nn.parent);
-		nn.parent=n;//path Compression 
+		nn.parent=n;//path Compression, (ek baar root node mil gya to iss current node ke parent mai directly wo root node daal do, taaki ye directly uss root node se connect jo jaye)
 		return n;
 
 	}

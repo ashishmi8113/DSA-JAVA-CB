@@ -53,8 +53,8 @@ public class BellmanFord {
 	}
 
 	public void BellmanfordAlgo() {
-		int v = map.size();
-		int[] dsu = new int[v + 1];
+		int v = map.size(); 
+		int[] dsu = new int[v + 1]; // distance array
 		for (int i = 2; i <= v; i++) {
 			dsu[i] = Integer.MAX_VALUE;
 		}

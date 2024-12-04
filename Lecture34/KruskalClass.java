@@ -37,7 +37,6 @@ public class KruskalClass {
 		public String toString() {
 			return e1 + " - " + e2 + " @ " + cost;
 		}
-
 	}
 
 	public ArrayList<EdgePair> getalledge() {
@@ -46,7 +45,7 @@ public class KruskalClass {
 		for (int e1 : map.keySet()) {
 			for (int e2 : map.get(e1).keySet()) {
 
-				EdgePair eg = new EdgePair(e1, e2, map.get(e1).get(e2));
+				EdgePair eg = new EdgePair(e1, e2, map.get(e1).get(e2)); // EdgePair Class Invoked
 				list.add(eg);
 
 			}
@@ -57,7 +56,7 @@ public class KruskalClass {
 
 	public void KruskalsAlgorithm() {
 		int ans = 0; //counting cost of the MST
-		DisjointSet ds = new DisjointSet();
+		DisjointSet ds = new DisjointSet();   // A Disjoint Set (Union-Find) data structure is created to help in cycle detection.
 		for (int k : map.keySet()) 
 			ds.CreateSet(k);
 
@@ -72,9 +71,11 @@ public class KruskalClass {
 		for (EdgePair edge : ll) {
 			int e1 = edge.e1;
 			int e2 = edge.e2;
-			int re1 = ds.find(e1);
-			int re2 = ds.find(e2);
-			if (re1 == re2) {
+
+			int re1 = ds.find(e1); // e1 ka jo root node hoga uski value aayegi
+			int re2 = ds.find(e2); // e2 ka jo root node hoga uski value aayegi
+
+			if (re1 == re2) { // checking for cycle, if dono node ke rootnode same hai to agar inko connect kar diya to cycle ban jaegi, so do nothing if they are equal
 				// Same root element do nothing
 			} else {
 				System.out.println(edge);
